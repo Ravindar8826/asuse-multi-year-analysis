@@ -1,1 +1,87 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# LOAD DATA
+# ══════════════════════════════════════════════════════════════════════════════
+path <- "C:/Users/rmahto/OneDrive - National Council of Applied Economic Research/Data Analysis/Data/ASUSE 2021-22/ASUSE_DATA_2021-22_STATA"
 
+L01 <- read_dta(paste0(path, "LEVEL - 01(Block 1  item 1403, 1408 of Block 14).dta")) %>%
+  mutate(across(everything(), zap_labels))
+
+L02 <- read_dta(paste0(path, "LEVEL - 02(Block 2)")) %>%
+  mutate(across(everything(), zap_labels))
+
+
+
+
+
+
+
+library(haven)
+
+LEVEL_12_Block_11_1_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 12 (Block 11) (1).dta")
+#View(LEVEL_12_Block_11_1_)
+colnames(LEVEL_12_Block_11_1_)
+
+
+LEVEL_16_Block_14_1_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 16 (Block 14) (1).dta")
+#View(LEVEL_16_Block_14_1_)
+colnames(LEVEL_16_Block_14_1_)
+
+LEVEL_13_Block_11_1_1_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 13 (Block 11_1) (1).dta")
+#View(LEVEL_13_Block_11_1_1_)
+colnames(LEVEL_13_Block_11_1_1_)
+
+LEVEL_14_Block_12_1_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 14 (Block 12) (1).dta")
+#View(LEVEL_14_Block_12_1_)
+colnames(LEVEL_14_Block_12_1_)
+
+LEVEL_15_Block_13_1_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 15 (Block 13) (1).dta")
+#View(LEVEL_15_Block_13_1_)
+colnames(LEVEL_15_Block_13_1_)
+
+LEVEL_11_Block_10_2_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 11 (Block 10) (2).dta")
+#View(LEVEL_11_Block_10_2_)
+colnames(LEVEL_11_Block_10_2_)
+
+
+LEVEL_09_Block_8_2_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 09 (Block 8) (2).dta")
+#View(LEVEL_09_Block_8_2_)
+colnames(LEVEL_09_Block_8_2_)
+
+
+
+LEVEL_10_Block_9_2_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 10 (Block 9) (2).dta")
+#View(LEVEL_10_Block_9_2_)
+colnames(LEVEL_10_Block_9_2_)
+
+LEVEL_06_Block_5_section_5_1_to_5_14_1_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 06 (Block 5 - section 5_1 to 5_14) (1).dta")
+#View(LEVEL_06_Block_5_section_5_1_to_5_14_1_)
+colnames(LEVEL_06_Block_5_section_5_1_to_5_14_1_)
+
+LEVEL_07_Block_6_2_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 07 (Block 6) (2).dta")
+#View(LEVEL_07_Block_6_2_)
+colnames(LEVEL_07_Block_6_2_)
+
+
+LEVEL_08_Block_7_1_7_2_1_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 08 (Block 7_1  7_2) (1).dta")
+#View(LEVEL_08_Block_7_1_7_2_1_)
+colnames(LEVEL_08_Block_7_1_7_2_1_)
+
+LEVEL_05_Block_4_2_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 05 (Block 4) (2).dta")
+#View(LEVEL_05_Block_4_2_)
+colnames(LEVEL_05_Block_4_2_)
+
+LEVEL_04_Block_3_section_3_1_to_3_14_1_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 04 (Block 3 - section 3_1 to 3_14) (1).dta")
+#View(LEVEL_04_Block_3_section_3_1_to_3_14_1_)
+colnames(LEVEL_04_Block_3_section_3_1_to_3_14_1_)
+
+LEVEL_01_Block_1_item_1503_1508_of_Block_15_1_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 01(Block 1  item 1503, 1508 of Block 15) (1).dta")
+#View(LEVEL_01_Block_1_item_1503_1508_of_Block_15_1_)
+colnames(LEVEL_01_Block_1_item_1503_1508_of_Block_15_1_)
+
+LEVEL_02_Block_2_2_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 02(Block 2) (2).dta")
+#View(LEVEL_02_Block_2_2_)
+colnames(LEVEL_02_Block_2_2_)
+
+LEVEL_03_Block_2_1_2_2_2_3_2_ <- read_dta("C:/Users/rmahto/Downloads/ASUSE_DATA_2023_24_Stata/ASUSE_DATA_2023_24_Stata/LEVEL - 03 (Block 2_1, 2_2  2_3) (2).dta")
+#View(LEVEL_03_Block_2_1_2_2_2_3_2_)
+colnames(LEVEL_03_Block_2_1_2_2_2_3_2_)
